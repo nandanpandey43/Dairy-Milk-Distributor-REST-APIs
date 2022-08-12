@@ -1,0 +1,18 @@
+URL link :- https://milk-distributor-api-assign.herokuapp.com/api/v1/checkCapacity/2022-11-12
+
+
+Features :- A user can order any amount of milk in a particular city, if the milk 
+            is available in that city it will register it, else will return the other 
+            cities where the user can buy the milk.
+
+         - If has all the endpoints implemented as per the requirememts given on HackerEarth.
+
+         - It also has added endpoints in REST.http file with comments so that any one can understand,
+           the usage of the API endpoints.
+         
+         - followed the best practices while writing the APIs.
+         
+
+- Swagger docs are lacking due to time limitation, would probably add it later.
+
+Thank You.

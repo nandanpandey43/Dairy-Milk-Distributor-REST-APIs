@@ -36,7 +36,6 @@ module.exports = async (req, res, next) => {
           dispatched: false,
           date: {
             $lte: searchDate,
-            //   $gte: new Date(ISODate().getTime() - 7 * 1000 * 86400),
           },
         },
       },
@@ -46,16 +45,9 @@ module.exports = async (req, res, next) => {
       {
         $match: {
           milkAvailable: { $gte: 1 },
-          // date: {
-          //   $lte: new Date(),
-          //   $gte: new Date(ISODate().getTime() - 7 * 1000 * 86400),
-          // },
         },
       },
     ]);
-
-    // console.log("ordersLeft ", ordersLeft);
-    // console.log("totalMilkAvailable ", totalMilkAvailable);
 
     const report = {
       [`total orders left as of ${req.params.date}`]: (() => {
