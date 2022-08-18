@@ -10,17 +10,12 @@ module.exports = () => {
         useNewUrlParser: true,
         autoIndex: true,
         useUnifiedTopology: true,
-        // useFindAndModify: false
       }
     )
     .then(() => {
       console.log("Dairy DB connected...");
     })
     .catch((err) => console.log(err.message));
-
-  // mongoose.connection.on("connected", () => {
-  //   console.log("purohit DB connected...");
-  // });
 
   mongoose.connection.on("error", (err) => {
     console.log(err.message);
