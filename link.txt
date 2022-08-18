@@ -13,6 +13,3 @@ Features :- A user can order any amount of milk in a particular city, if the mil
          - followed the best practices while writing the APIs.
          
 
-- Swagger docs are lacking due to time limitation, would probably add it later.
-
-Thank You.

@@ -1,0 +1,56 @@
+
+### GET route
+GET http://localhost:3000/api/v1
+
+
+### Add Milk data
+POST http://localhost:3000/api/v1/addmilk
+Content-Type: application/json
+
+{
+    "totalMilk" : 4,
+    "city" : "ranchi"
+}
+
+
+### Post the milk orders here
+POST http://localhost:3000/api/v1/add
+Content-Type: application/json
+
+{
+    "requiredMilk" : 2,
+    "city" : "ranchi",
+    "date" : "11-01-2022"
+}
+
+### update the order here
+PUT  http://localhost:3000/api/v1/update/62f699f5e70f69cfc9f8f0eb
+Content-Type: application/json
+
+{
+    "requiredMilk" : 10,
+    "city" : "barhi",
+    "date" : "11-01-2022"
+}
+
+
+### update the order status here
+PUT  http://localhost:3000/api/v1/updateStatus/62f69ad4bc518a9b9cd89fd0
+Content-Type: application/json
+
+{
+   "dispatched" : true,
+   "delivered" : true
+}
+
+
+### Delete a pandit by id
+DELETE  http://localhost:3000/api/v1/delete/62f6933cb81ffcff633d0c1b
+
+### checkCapacity/:date
+GET http://localhost:3000/api/v1/checkCapacity/2022-11-12
+
+
+
+
+
